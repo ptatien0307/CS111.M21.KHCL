@@ -10,9 +10,9 @@
 # THÔNG TIN
 * **Họ và tên:** Phạm Trần Anh Tiên 
 * **MSSV:** 20522012
-* **Lớp:** CS231.M22.KHCL
+* **Lớp:** CS112.M21.KHCL
 * **Năm học:** 2021 - 2022
-* **Giảng viên:** Mai Tiến Dũng - *dungmt@uit.edu.vn*
+* **Giảng viên:** Trịnh Quốc Sơn - *sontq@uit.edu.vn*
 
 # ĐỒ ÁN
 * **Đề tài:** NGHIÊN CỨU BỘ CÔNG CỤ PHÂN TÍCH TỪ VỰNG , PHÂN TÍCH CÚ PHÁP LEX VÀ YACC
