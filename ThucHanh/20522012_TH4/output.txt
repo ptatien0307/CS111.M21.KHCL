@@ -1,0 +1,42 @@
+
+Grammar rule:
+P ---> E
+E ---> E + T | E - T | T
+T ---> T + S | T / S | S 
+S ---> F + S | F 
+F ---> ( E ) | id
+
+Sentence:
+id*id*id/id+id
+
+ STACK 				 INPUT 			ACTION 
+$			id*id*id/id+id			$
+$id			  *id*id/id+id			SHIFT
+$F			  *id*id/id+id			REDUCE TO F -> id
+$S			  *id*id/id+id			REDUCE TO S -> F
+$T			  *id*id/id+id			REDUCE TO T -> S
+$T*			   id*id/id+id			SHIFT
+$T*id			     *id/id+id			SHIFT
+$T*F			     *id/id+id			REDUCE TO F -> id
+$T*S			     *id/id+id			REDUCE TO S -> F
+$T			     *id/id+id			REDUCE TO T -> T * S
+$T*			      id/id+id			SHIFT
+$T*id			        /id+id			SHIFT
+$T*F			        /id+id			REDUCE TO F -> id
+$T*S			        /id+id			REDUCE TO S -> F
+$T			        /id+id			REDUCE TO T -> T * S
+$T/			         id+id			SHIFT
+$T/id			           +id			SHIFT
+$T/F			           +id			REDUCE TO F -> id
+$T/S			           +id			REDUCE TO S -> F
+$T			           +id			REDUCE TO T -> T / S
+$E			           +id			REDUCE TO E -> T
+$E+			            id			SHIFT
+$E+id			              			SHIFT
+$E+F			              			REDUCE TO F -> id
+$E+S			              			REDUCE TO S -> F
+$E+T			              			REDUCE TO T -> S
+$E			              			REDUCE TO E -> E + T
+$P			              			REDUCE TO P -> E
+
+Accept
