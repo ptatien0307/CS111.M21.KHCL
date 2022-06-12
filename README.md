@@ -5,12 +5,12 @@
 </p>
 
 <!-- Title -->
-<h1 align="center"><b>CS112 - NHẬP MÔN THỊ GIÁC MÁY TÍNH</b></h1>
+<h1 align="center"><b>CS111 - NGUYÊN LÝ VÀ PHƯƠNG PHÁP LẬP TRÌNH</b></h1>
 
 # THÔNG TIN
 * **Họ và tên:** Phạm Trần Anh Tiên 
 * **MSSV:** 20522012
-* **Lớp:** CS112.M21.KHCL
+* **Lớp:** CS111.M21.KHCL
 * **Năm học:** 2021 - 2022
 * **Giảng viên:** Trịnh Quốc Sơn - *sontq@uit.edu.vn*
 
